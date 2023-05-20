@@ -9,7 +9,7 @@
 /* section {
   height: 60px;
 } */
-button {
+.square-btn {
   background: #fff;
     border: 1px solid #999;
     float: left;

@@ -5,7 +5,7 @@ const Square = ({ value, onSquareClick }) => {
     // function handleClick() {
     //     setValue("X");
     // }
-    return <button onClick={onSquareClick}>{value}</button>
+    return <button className='square-btn' onClick={onSquareClick}>{value}</button>
 }
 
 const Board = ({ xIsNext, squares, onPlay }) => {

@@ -1,28 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Square = ({value}) => {
+    // const [value, setValue] = useState(null)
+    // function handleClick() {
+    //     setValue("X");
+    // }
     return <button>{value}</button>
 }
 
 const Board = () => {
+    const [squares, setSquares] = useState(Array(9).fill(null));
     return (
-        <main className=''>
+        <main className='grid grid-cols-1'>
             <section className=''>
-                <Square value={1} />
-                <Square value={2}/>
-                <Square value={3}/>
+                <Square value={squares[0]} />
+                <Square value={squares[1]}/>
+                <Square value={squares[2]}/>
 
             </section>
             <section>
-                <Square value={4} />
-                <Square value={5} />
-                <Square value={6} />
+                <Square value={squares[3]} />
+                <Square value={squares[4]} />
+                <Square value={squares[5]} />
 
             </section>
             <section>
-                <Square value={7} />
-                <Square value={8} />
-                <Square value={9} />
+                <Square value={squares[6]} />
+                <Square value={squares[7]} />
+                <Square value={squares[8]} />
 
             </section>
         </main>

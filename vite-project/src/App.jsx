@@ -1,11 +1,11 @@
 import './App.css'
-import Square from './components/Square'
+import Game from './components/Game'
 
 function App() {
 
   return (
     <>
-      <Square />
+      <Game />
     </>
   )
 }
